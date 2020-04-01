@@ -4,7 +4,10 @@ Es kommen noch zusätzliche Buttons dazu die zu neuen
 Seiten weiterleiten
 
 ## Bootstrap
-Es werden nicht nur die Startseite sondern auch in den anderen Seiten Bootstrap verwendet
+Es werden nicht nur die Startseite sondern auch in den anderen Seiten werden wir mit Bootstrap arbeiten
+
+## Ordner
+Die Ordner wollen wir alle mehr ordnen damit nicht alles in einen Haufen ist sondern dass man jede Datei gut finden kann
 
 ## Neue Seiten
 Galaxys Karte,
