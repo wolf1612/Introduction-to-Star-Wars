@@ -29,3 +29,15 @@ Die Schiffe vom Republik, der Separatisten, der Rebelion, des Imperiums, werden 
 
 ## Waffen
 Die Waffen mit denen die Klonkrieger und welche Einheiten welche Waffen verwenden genauso wie die anderen Seiten und auch über die Lichtschwerter und deren Arten der Jedi und Sith werden beschrieben und Bilder oder vielleicht auch Videos eingefügt wo man es aus den Filmen sieht.
+
+## Jedi
+Die Jedi und deren Zeiten werden beschrieben und eine Liste gemacht von den stärksten Jedi
+
+## Sith
+Von den Siths wird ebenfalls eine Liste gemacht von den mächtigsten und werden genauer beschrieben
+
+## Imperium
+Die imperialen Truppler und deren Raumschiffe, Waffen, Anführer ... werden beschrieben und mit Bilder werden gezeigt wie die in den Filmen und Serien aussehen
+
+## Rebelion
+Die gegner der imperialen vom 4 - 6 Teil und Rogue One bekommen auch ihre eigense Seite
