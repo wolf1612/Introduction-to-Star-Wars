@@ -3,6 +3,9 @@ Wird verbessert, Strukturierter und Übersichtlicher
 Es kommen noch zusätzliche Buttons dazu die zu neuen 
 Seiten weiterleiten
 
+## Bootstrap
+Es werden nicht nur die Startseite sondern auch in den anderen Seiten Bootstrap verwendet
+
 ## Neue Seiten
 Galaxys Karte,
 Beschreibungen,
@@ -15,5 +18,14 @@ Der Rebelion
 Republik
 Separatisten
 
-## Galaxys Kart 
+## Galaxys Karte 
 In der Galaxys Karte wird ein Überblick sein über die Planeten und Schlachten, Orte und Gebiete 
+
+## Beschreibungen
+Jeder Filmteil bekommt mehr Beschreibung
+
+## Schiffe
+Die Schiffe vom Republik, der Separatisten, der Rebelion, des Imperiums, werden alle Beschrieben und Bilder davon eingefügt wie die in den Filmen oder Serien aussehen
+
+## Waffen
+Die Waffen mit denen die Klonkrieger und welche Einheiten welche Waffen verwenden genauso wie die anderen Seiten und auch über die Lichtschwerter und deren Arten der Jedi und Sith werden beschrieben und Bilder oder vielleicht auch Videos eingefügt wo man es aus den Filmen sieht.
