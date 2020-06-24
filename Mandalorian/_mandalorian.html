@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="utf-8">
+
+<style>
+body{
+Background-color: black}
+</style>
+</head>
+<button id="Star Wars" type="button" alt="Star Wars als Button" onclick="window.open('../_Home/index.html'); window.close();">
+		<img src="../Deko/HomeButton.png" width=100px height=100px>
+		</button>
+
+<body style="background-image: url('galaxys.jpg');>
+
+<image src="nix.png" width=1900px height=100px>
+<image src="../Deko/nix.png" width=100px height=100px>
+<image class="mainImg" src="MandoTitle.png" width="1300" height="350">
+<image src = "../Deko/nix.png" height="400" width="100">
+<image class="mainImg" src="MandoTheMandalorian.png" width="300" height="400">
+<br></br>
+
+<dl class="row">
+
+<dt class="col-sm-3">
+<font size="+4" style="color:#F6D8CE;">
+Info:
+</font>
+</dt>
+<br></br>
+
+<dd class="col-sm-9">
+<font size="+2" style="color:#F6D8CE;">The Mandalorian, auch bekannt als Star Wars: The Mandalorian, ist eine amerikanische Raumfahrt-Western-Web-Fernsehserie, die von Jon Favreau entwickelt und auf Disney veröffentlicht wurde. Es ist die erste Live-Action-Serie in der Star Wars-Reihe. Fünf Jahre nach den Ereignissen von Return of the Jedi und 25 Jahre vor den Ereignissen von The Force Awakens, folgt es dem Titel Charakter - ein mandalorianischer Kopfgeldjäger - und seinen Leistungen darüber hinaus die Reichweiten der Neuen Republik.
+Favreau ist neben Dave Filoni, Kathleen Kennedy und Colin Wilson auch Headwriter und Showrunner sowie Executive Producer. Die Serie wurde mit dem Start von Disney + am 12. November 2019 uraufgeführt. Es gibt acht Folgen in der ersten Staffel, und eine zweite Staffel wurde bestellt, um Ende 2020 Premiere. Die Serie hat positive Bewertungen erhalten.
+</font>
+</dd>
+</dl>
+<br></br>
+
+
+<dl class="row">
+<dt class="col-sm-3">
+<font size="+4" style="color:#F6D8CE;">
+Handlung:
+</font>
+</dt>
+<br></br>
+
+<dd class="col-sm-9">
+<font size="+2" style="color:#F6D8CE;">
+Der mandalorianische Protagonist ist ein Einzelkämpfer, der fünf Jahre nach dem Untergang des Imperiums (Episode 6) sein Geld als Kopfgeldjäger verdient. Durch das Aufspüren und in Gewahrsam nehmen von Flüchtigen hat er sich in der Gilde der Kopfgeldjäger einen Namen gemacht. Von einem imperialen Auftraggeber erhält er die Aufgabe, einen Fünfzigjährigen aufzuspüren. Der Mandalorianer stellt fest, dass dieser Fünfzigjährige ein Kind und somit von weit größerer Bedeutung ist, als er es je hätte ahnen können. Das Kind ist von derselben Spezies wie der frühere Jedi-Meister Yoda. Entgegen den Regeln der Kopfgeldjäger-Gilde entschließt er sich, das Kind dem Auftraggeber wieder abzunehmen und es stattdessen zu beschützen, wodurch er selbst zur Zielscheibe der übrigen Kopfgeldjäger wird. Der Mandalorianer schlägt sich in der Folge mit Auftragsjobs quer durch die Galaxis und muss dabei stets auf das Kind achten, was ihn zwingt, immer auf der Hut zu sein und niemandem zu trauen.
+</font>
+</dd>
+
+<dt class="col-sm-6">
+<font size="+2" style="color:#F6D8CE;">
+Click the play button to watch a scene of Star Wars The Mandalorian
+</font>
+</dt>
+<br></br>
+</dl>
+
+<video id="player" controls>
+	<source src="MandoFlies.mp4" type="video/mp4">
+</video>
+
+<button id="playButton" type="button" onclick="playVideo()">Play</button>
+<button id="pauseButton" type="button" onclick="pauseVideo()">Stop</button>
+<image src="../Deko/nix.png" height="100" width="50">
+<image src = "BabyYodaTr.png" height="200" width="200">
+<br></br>
+<br></br>
+
+<script>
+	<!-- function dj() { -->
+	    <!-- var videoPlayer = document.getElementById('videoPlayer'); -->
+
+		<!-- // Auto play, half volume. -->
+		<!-- videoPlayer.play() -->
+		<!-- videoPlayer.volume = 0.5; -->
+
+		<!-- // Play / pause. -->
+		<!-- videoPlayer.addEventListener('click', function () { -->
+        <!-- if (videoPlayer.paused == false) { -->
+            <!-- videoPlayer.pause(); -->
+            <!-- videoPlayer.firstChild.nodeValue = 'Play'; -->
+        <!-- } else { -->
+            <!-- videoPlayer.play(); -->
+            <!-- videoPlayer.firstChild.nodeValue = 'Pause'; -->
+        <!-- } -->
+    <!-- }); -->
+	<!-- } -->
+	var videoPlayer = document.getElementById("player");
+	function playVideo() {
+
+		videoPlayer.play();
+	}
+	
+	function pauseVideo() {
+
+		videoPlayer.pause();
+	}
+</script>
+</body>
+</html>
