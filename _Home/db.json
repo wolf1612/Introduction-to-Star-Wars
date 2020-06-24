@@ -1,0 +1,333 @@
+{
+  "films": [
+    {
+      "id": "1m",
+      "rank": "1",
+      "title": "Phantom Menace",
+      "year": "1999",
+      "description": "After a few years the siths came back and Jedi have to kill them. In the movie there also find Anakin Skywalker the chosen one",
+      "director": "George Lucas",
+      "stars": [
+        ""
+      ]
+    },
+    {
+      "id": "2m",
+      "rank": "2",
+      "title": "Attack of the clones",
+      "year": "2002",
+      "description": "In this movie the clones are born which helps the republic and after the death of the sith apprentice in phantom menace there a new one comes.",
+      "director": "George Lucas",
+      "stars": [
+        ""
+      ]
+    },
+    {
+      "id": "3m",
+      "rank": "3",
+      "title": "Revenge of the Sith",
+      "year": "2005",
+      "description": "Anakin Skywalker turns to the dark side and the clones kills nearly every jedi. Anakin becomes Darth Vader and Obi Wan and Yoda are hiding",
+      "director": "George Lucas",
+      "stars": [
+        ""
+      ]
+    },
+    {
+      "id": "4m",
+      "rank": "4",
+      "title": "A new Hope",
+      "year": "1977",
+      "description": "Obi Wan dies against Vader and Luke Skywalker destroys the Death Star with the rebellion.",
+      "director": "George Lucas",
+      "stars": [
+        ""
+      ]
+    },
+    {
+      "id": "5d",
+      "rank": "5",
+      "title": "Empire strkes back",
+      "year": "1980",
+      "description": "Luke is going to be a jedi with yodas trainingg. Jan solo get freezed and Luke looses his Hand in a fight with darth Vader.",
+      "director": "George Lucas",
+      "stars": [
+        ""
+      ]
+    },
+    {
+      "id": "6d",
+      "rank": "6",
+      "title": "Return of the Jedi",
+      "year": "1983",
+      "description": "Luke is a Jedi and saves Han Solo in Jabbas Palast and then they go to endor to turn off the Death Stars Shield and Luke fights with Darth Vader and after the fight Vader throws Darth Sidious away and Vader dies.",
+      "director": "George Lucas",
+      "stars": [
+        ""
+      ]
+    },
+    {
+      "id": "7d",
+      "rank": "7",
+      "title": "The Force Awakens",
+      "year": "2015",
+      "description": "Rey founds Lukes Lightsaber and Kylo Ren kills Han Solo. Rey finds Luke on Arch-To",
+      "director": "JJ Abrahams",
+      "stars": [
+        ""
+      ]
+    },
+    {
+      "id": "8d",
+      "rank": "8",
+      "title": "The last Jedi",
+      "year": "2017",
+      "description": "Kylo Ren kills Snoke and the rest of the movie nobody cares",
+      "director": "Ryan Johnson",
+      "stars": [
+        ""
+      ]
+    },
+    {
+      "id": "9d",
+      "rank": "9",
+      "title": "Rise of Skywalker",
+      "year": "2019",
+      "description": "Darth Sidious is alive and says that he made snoke and Rey and Kylo Ren wants to kill him and at the end Sidious dies and also Kylo Ren.",
+      "director": "JJ Abahams",
+      "stars": [
+        ""
+      ]
+    }
+  ],
+  "searching": [
+    {
+      "id": "1",
+      "title": "Phantom Menace",
+      "click": "../Episodes/1/Ep1.html"
+    },
+    {
+      "id": "2",
+      "title": "Attack of the Clones",
+      "click": "../Episodes/2/Ep2.html"
+    },
+    {
+      "id": "3",
+      "title": "Revenge of the sith",
+      "click": "../Episodes/3/Ep3.html"
+    },
+    {
+      "id": "4",
+      "title": "A new Hope",
+      "click": "../Episodes/4/Ep4.html"
+    },
+    {
+      "id": "5",
+      "title": "Empire strikes back",
+      "click": "../Episodes/5/Ep5.html"
+    },
+    {
+      "id": "6",
+      "title": "Return of the Jedi",
+      "click": "../Episodes/6/Ep6.html"
+    },
+    {
+      "id": "7",
+      "title": "The Force Awakens",
+      "click": "../Episodes/7/Ep7.html"
+    },
+    {
+      "id": "8",
+      "title": "The Last Jedi",
+      "click": "../Episodes/8/Ep8.html"
+    },
+    {
+      "id": "9",
+      "title": "Rise of Skywalker",
+      "click": "../Episodes/9/Ep9.html"
+    },
+    {
+      "id": "10",
+      "title": "Clone Wars",
+      "click": "../CloneWars/_clonewars.html"
+    },
+    {
+      "id": "11",
+      "title": "Rebels",
+      "click": ".../Rebels/_Rebels.html"
+    },
+    {
+      "id": "11",
+      "title": "Mandalorian",
+      "click": "../Mandalorian/_mandalorian.html"
+    },
+    {
+      "id": "12",
+      "title": "Timeline",
+      "click": "../TimeLine/_Timeline.html"
+    },
+    {
+      "id": "13",
+      "title": "Intros",
+      "click": "../StarWarsAll/_StarwarsDescriptions.html"
+    }
+  ],
+  "characters": [
+    {
+      "id": "1c",
+      "name": "Qui-Gonn Jinn",
+      "home": "Naboo",
+      "image": "../Charakters/1c.jpg"
+    },
+    {
+      "id": "2c",
+      "name": "Anakin Skywalker",
+      "home": "Tatoine",
+      "image": "../Charakters/2c.jpg"
+    },
+    {
+      "id": "3c",
+      "name": "Obi-Wan Kenobi",
+      "home": "Naboo",
+      "image": "../Charakters/3c.jpg"
+    },
+    {
+      "id": "4c",
+      "name": "Darth Maul",
+      "home": "Dathomir",
+      "image": "../Charakters/4c.jpg"
+    },
+    {
+      "id": "5c",
+      "name": "Darth Sidious",
+      "home": "Naboo",
+      "image": "../Charakters/5c.jpg"
+    },
+    {
+      "id": "6c",
+      "name": "R2-D2",
+      "home": "/",
+      "image": "../Charakters/6c.jpg"
+    },
+    {
+      "id": "7c",
+      "name": "C3-PO",
+      "home": "Tatoine",
+      "image": "../Charakters/7c.jpg"
+    },
+    {
+      "id": "8c",
+      "name": "Yoda",
+      "home": "Dagobah",
+      "image": "../Charakters/8c.jpg"
+    },
+    {
+      "id": "9c",
+      "name": "Mace Windu",
+      "home": "Geonosis",
+      "image": "../Charakters/9c.png"
+    },
+    {
+      "id": "10c",
+      "name": "Jango Fett",
+      "home": "Mandalor",
+      "image": "../Charakters/10c.jpg"
+    },
+    {
+      "id": "11c",
+      "name": "Boba Fett",
+      "home": "Kamino",
+      "image": "../Charakters/11c.jpg"
+    },
+    {
+      "id": "26c",
+      "name": "Count Doku",
+      "home": "Geonosis",
+      "image": "../Charakters/26c.jpg"
+    },
+    {
+      "id": "12c",
+      "name": "General Grievous",
+      "home": "Utapau",
+      "image": "../Charakters/12c.jpg"
+    },
+    {
+      "id": "13c",
+      "name": "Darth Vader",
+      "home": "Tatoine",
+      "image": "../Charakters/13c.jpg"
+    },
+    {
+      "id": "25c",
+      "name": "Luke Skywalker",
+      "home": "Tatoine",
+      "image": "../Charakters/25c.jpg"
+    },
+    {
+      "id": "14c",
+      "name": "Han Solo",
+      "home": "Corellia",
+      "image": "../Charakters/14c.jpg"
+    },
+    {
+      "id": "15c",
+      "name": "Chewbacca",
+      "home": "Kashyyyk",
+      "image": "../Charakters/15c.jpg"
+    },
+    {
+      "id": "16c",
+      "name": "Jabba",
+      "home": "Tatoine",
+      "image": "../Charakters/16c.jpg"
+    },
+    {
+      "id": "17c",
+      "name": "Mando",
+      "home": "Mandalor",
+      "image": "../Charakters/17c.jpg"
+    },
+    {
+      "id": "18c",
+      "name": "Baby Yoda",
+      "home": "/",
+      "image": "../Charakters/18c.jpg"
+    },
+    {
+      "id": "19c",
+      "name": "Poe Dameron",
+      "home": "X-Wing",
+      "image": "../Charakters/19c.jpg"
+    },
+    {
+      "id": "20c",
+      "name": "Finn",
+      "home": "/",
+      "image": "../Charakters/20c.jpg"
+    },
+    {
+      "id": "21c",
+      "name": "Kylo Ren",
+      "home": "/",
+      "image": "../Charakters/21c.jpg"
+    },
+    {
+      "id": "22c",
+      "name": "Rey",
+      "home": "Jakku",
+      "image": "../Charakters/22c.jpg"
+    },
+    {
+      "id": "23c",
+      "name": "Snoke",
+      "home": "Sidious",
+      "image": "../Charakters/23c.jpg"
+    },
+    {
+      "id": "24c",
+      "name": "Hux",
+      "home": "Star Detroyer",
+      "image": "../Charakters/24c.jpg"
+    }
+  ]
+}

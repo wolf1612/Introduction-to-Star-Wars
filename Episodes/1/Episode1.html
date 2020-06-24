@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#title {
+  position: fixed;
+  <!--left: 0;-->
+  <!--bottom: 0;-->
+  top: 0;
+  right: 800px;
+  <!--width: 300px;-->
+  <!--border: 3px solid #73AD21;-->
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+/* Standard syntax */
+@keyframes example {
+  <!--0%   {background-color:red;}
+  25%  {background-color:yellow;}
+  50%  {background-color:blue;}
+  75%  {background-color:green;}
+  100% {background-color:red;}-->
+  
+  0% {bottom: 0px;}
+  25% {bottom: 50px;}
+  50% {bottom: 200px;}
+  75% {top: 50px;}
+  100% {top: 0px;}
+}
+
+</style>
+</head>
+<body>
+<h1 id="title">Star Wars: Episode 1 - Die dunkle Bedrohung</h1>
+<br><br>
+<br><br>
+<p>Es war einmal...  das ist der Beginn eines Märchens aber nicht von Star Wars. Star Wars ist viel mehr. Es ist eine 
+Erzählung einer Galaxis die von Krieg, Tod, Leid, Sklaverei, Korruption, usw. befallen ist und leidet. Doch da gibt es die 
+helle Seite der Macht. Die sogenannten Jediritter schlossen sich der Republik an um gegen das böse zu kämpfen. Der Senat mit den 
+Abgeordneten und dem Senator und den Jedi bilden zusammen die Republik.</p>
+<br><br>
+<div></div>
+<body>
+</html>

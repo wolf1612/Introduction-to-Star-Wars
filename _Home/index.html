@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Star Wars</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../css/agency.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top"
+style="background-image: url('../Deko/galaxys.jpg');
+		<background-repeat: repeat;>
+		background-size: 100% 100%";>>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+		<li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#header">Home</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#searchbar">Characters</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#movies">Movies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#series">Series</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#timeline">TimeLine</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#intros">Intros</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="page-section" id ="header">
+		<header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in">Welcome To Our Star Wars Website!</div>
+        <div class="intro-heading text-uppercase">There you find some Information</div>
+		
+		<img src = "../Deko/MilleniumFalke.png" width = 200px height = 100px>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#searchbar">Tell Me More</a>
+      </div>
+    </div>
+  </header>
+  </section>
+
+  
+  <!-- Searchbar (Characters)-->
+  <section class="page-section" id="searchbar">
+  
+  <content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+	
+
+	
+	<div class = "container">
+	
+	<a href="#demo" class="btn btn-primary" data-toggle="collapse" >Insert character</a>
+
+	  <div id="demo"  style="color:White" class="collapse">
+	  <br></br>
+	  Enter a character if you miss one and it will be wiritten into the server.<br></br>
+		<!--<input type ="text" name = "vid" id ="vid" placeholder="Id"><br>-->
+		<input type="text" name="vname" id="vname" placeholder="Name"><br>
+		<input type="text" name="vhome" id="vhome" placeholder="Home"><br>
+		<input type="text" name="vimage" id="vimage" placeholder="Image"><br>
+	   
+		 <input type="button" onclick="submitToServer()" value="insert">
+		 </div>
+		 
+		 <script>
+		 function submitToServer(){
+			var xmlhttp = new XMLHttpRequest();   // new HttpRequest instance 
+			var theUrl = "http://localhost:3000/characters";
+			
+			var id = Math.floor(Math.random() * 999999999999999999) + 1;	//random id
+			var name = document.getElementById("vname").value;
+			var home = document.getElementById("vhome").value;
+			var image = document.getElementById("vimage").value;
+			
+			xmlhttp.open("POST", theUrl);
+			xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+			xmlhttp.send(JSON.stringify({
+			"id": id,
+			"name": name,
+			"home": home,
+			"image": image}));
+			
+		}
+		 </script>
+		 
+	
+	</div>
+	
+	
+	
+	
+	
+        <div class="container">
+            <h1>Searchbar</h1>
+            <div id="searchWrapper">
+                <input
+                    type="text"
+                    name="searchBar"
+                    id="searchBar"
+                    placeholder="search for a character in star wars ..."
+                />
+            </div>
+			<img src="Deko/nix.png" width = 600 height =15px>
+            <ul id="charactersList"></ul>
+        </div>
+		
+		<div id="root"></div>
+		
+        <script src="scriptsSearchbar.js"></script>
+  
+  
+        <ul id="myUL" style="color:White;">
+		
+		
+		
+</ul>
+
+
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+	
+	//li = JSON.parse(this.response);
+	
+	for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+	
+}
+</script>
+      </div>
+
+		<img src = "../Deko/nix.png" width = 950px height = 100px>
+			
+ </section>
+  
+  
+  
+  <!-- Movies -->
+  <section class="page-section" id="movies">
+    <div class="container"
+		style="background-image: url('../Deko/galaxypic.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%";>
+	
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase" style="color:White;">Star Wars Movies</h2>
+          <h3 class="section-subheading text-muted" style="color:White;">The Movie Descriptions</h3>
+        </div>
+      </div>
+      
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <div class ="row">
+		  <h2 class="section-heading text-uppercase" style="color:Yellow;">Prequels</h2>
+		  <img src="Deko/nix.png" width = 600 height =10px>
+			<div class="col-sm-4">
+			  <h3>The Phantom Menance</h3>        
+			  <button id="clonewarsButton" type="button" alt="clonewars als Button" onclick="window.open('../Episodes/1/Ep1.html'); window.close();">
+			<img src="../Episodes/1/Episode1-Plakat.jpg" width=250px height=400px>
+			</button>
+			</div>
+			<div class="col-sm-4">
+			  <h3>Attack of The Clones</h3>        
+			  <button id="rebelsButton" type="button" alt="Rebels als Button" onclick="window.open('../Episodes/2/Ep2.html'); window.close();">
+			<img src="../Episodes/2/Episode2.jpg" width=250px height=400px>
+			</button>
+			</div>
+			<div class="col-sm-4">
+			  <h3>Revenge of the Sith    </h3>        
+			  <button id="mandalorianButton" type="button" alt="mandalorian als Button" onclick="window.open('../Episodes/3/Ep3.html'); window.close();">
+			<img src="../Episodes/3/Episode3.jpg" width=250px height=400px>
+			</button>
+			</div>
+	  </div>
+		
+		
+		<div class ="row">
+			<h2 class="section-heading text-uppercase" style="color:Yellow;">Originals</h2>
+			<img src="../Deko/nix.png" width = 600 height =10px>
+			<div class="col-sm-4">
+			  <h3>A new Hope</h3>        
+			  <button id="clonewarsButton" type="button" alt="clonewars als Button" onclick="window.open('../Episodes/4/Ep4.html.html'); window.close();">
+			<img src="../Episodes/4/Episode4.jpg" width=250px height=400px>
+			</button>
+			</div>
+			<div class="col-sm-4">
+			  <h3>Empire strkes bak</h3>        
+			  <button id="rebelsButton" type="button" alt="Rebels als Button" onclick="window.open('../Episodes/5/Ep5.html.html'); window.close();">
+			<img src="../Episodes/5/Episode5.jpg" width=250px height=400px>
+			</button>
+			</div>
+			<div class="col-sm-4">
+			  <h3>Return of the Jedi</h3>        
+			  <button id="mandalorianButton" type="button" alt="mandalorian als Button" onclick="window.open('../Episodes/6/Ep6.html.html'); window.close();">
+			<img src="../Episodes/6/Episode6.jpg" width=250px height=400px>
+			</button>
+			</div>
+	  </div>
+	  
+	  
+	  <div class ="row">
+		  <h2 class="section-heading text-uppercase" style="color:Yellow;">Sequels</h2>
+		  <img src="../Deko/nix.png" width = 600 height =10px>
+			<div class="col-sm-4">
+			  <h3>The Force Awakens</h3>        
+			  <button id="clonewarsButton" type="button" alt="clonewars als Button" onclick="window.open('../Episodes/7/Ep7.html'); window.close();">
+			<img src="../Episodes/7/Episode7.jpg" width=250px height=400px>
+			</button>
+			</div>
+			<div class="col-sm-4">
+			  <h3>The Last Jedi</h3>        
+			  <button id="rebelsButton" type="button" alt="Rebels als Button" onclick="window.open('../Episodes/8/Ep8.html'); window.close();">
+			<img src="../Episodes/8/Episode8.jpg" width=250px height=400px>
+			</button>
+			</div>
+			<div class="col-sm-4">
+			  <h3>Rise of Skywalker</h3>        
+			  <button id="mandalorianButton" type="button" alt="mandalorian als Button" onclick="window.open('../Episodes/9/Ep9.html'); window.close();">
+			<img src="../Episodes/9/Episode9.jpg" width=250px height=400px>
+			</button>
+			</div>
+	  </div>
+	  
+	  
+	  <div class ="row">
+		<h2 class="section-heading text-uppercase" style="color:Yellow;">Bonus</h2>
+		<img src="../Deko/nix.png" width = 650 height =10px>
+			<div class="col-sm-4">
+			  <h3>Rogue One</h3>        
+			  <button id="clonewarsButton" type="button" alt="clonewars als Button" onclick="window.open('../Episodes/9/Ep9.html'); window.close();">
+			<img src="../Episodes/Rogue One/ERogueOne.jpg" width=250px height=400px>
+			</button>
+			</div>
+			<div class="col-sm-4">
+			  <h3>Solo Story</h3>        
+			  <button id="rebelsButton" type="button" alt="Rebels als Button" onclick="window.open('../Episodes/9/Ep9.html'); window.close();">
+			<img src="../Episodes/Solo/ESolo.jpg" width=250px height=400px>
+			</button>
+			</div>
+			<div class="col-sm-4">
+			  <h3>Descriptions</h3>        
+			  <button id="clonewarsButton" type="button" alt="clonewars als Button" onclick="window.open('../StarWarsAll/__Star Wars.html'); window.close();">
+			<img src="../Deko/Star Wars.jpg" width=250px height=400px>
+			</button>
+			</div>
+	  </div>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  
+  <div id="root"></div>
+
+  <script src="scripts.js"></script>
+		
+			
+  </section>
+
+  
+  
+
+  <!-- Series -->
+  <section class="bg-light page-section" id="series"
+	style="background-image: url('../Deko/galaxyblue.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%";>
+    <div class="container"
+	style="background-image: url('../Deko/galaxywpl.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%";>
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 style="color:White; class="section-heading text-uppercase">Star Wars Series</h2>
+          <h3 class="section-subheading text-muted">Click on a Serie to read their information or watch a Video.</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+ 
+			  <button id="clonewarsButton" type="button" alt="clonewars als Button" onclick="window.open('../CloneWars/_clonewars.html'); window.close();">
+				<img src="../img/Series/clonewars.jpg" width=230px height=360px>
+				</button>
+            <h4>Clone Wars</h4>
+            <p style="color:White; class="text-muted">Serie between 2nd and 3rd movie</p>
+
+
+        </div>
+        <div class="col-sm-4">
+
+            <button id="rebelsButton" type="button" alt="Rebels als Button" onclick="window.open('../Rebels/_rebels.html'); window.close();">
+			<img src="../img/Series/Rebels.jpg" width=230px height=360px>
+			</button>
+            <h4>Rebels</h4>
+            <p style="color:White; class="text-muted">Serie between 3rd and 4th movie</p>
+            
+
+        </div>
+        <div class="col-sm-4">
+
+            <button id="mandalorianButton" type="button" alt="mandalorian als Button" onclick="window.open('../Mandalorian/_mandalorian.html'); window.close();">
+			<img src="../img/Series/mandalorian.jpg" width=230px height=360px>
+			</button>
+            <h4>The Mandalorian</h4>
+            <p style="color:White; class="text-muted">Serie between 6th and 7th movie</p>
+
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <p style="color:White; class="large text-muted">Clone Wars and Rebels are animation series and The Mandalorian not</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- Timeline -->
+  <section class="page-section" id="timeline">
+  <img src="../Deko/sklaveone.png" width=150px height= 150px>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 style="color:White; class="section-heading text-uppercase">Timeline</h2>
+          <h3 class="section-subheading text-muted">Timeline about the trilogys</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="timeline">
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="../img/about/1.jpg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div style="color:Yellow; class="timeline-heading">
+                  <h4>1999 - 2005</h4>
+                  <h4 class="subheading">Prequels</h4>
+                </div>
+                <div class="timeline-body">
+                  <p style="color:White;class="text-muted">The Star Wars prequel trilogy is a series of epic space-opera films written and directed by George Lucas. It was produced by Lucasfilm Ltd. and distributed by 20th Century Fox. The trilogy was released from 1999 to 2005 and is a prequel to the original Star Wars trilogy (1977–83). It consists of Star Wars: Episode I – The Phantom Menace (1999), Episode II – Attack of the Clones (2002), and Episode III – Revenge of the Sith (2005). It is the second of the three trilogies in the Skywalker saga in terms of release order, but chronologically is the first act.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="../img/about/2.jpg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div style="color:Yellow; class="timeline-heading">
+                  <h4>1977 - 1983</h4>
+                  <h4 class="subheading">Originals</h4>
+                </div>
+                <div class="timeline-body">
+                  <p style="color:White;class="text-muted">Star Wars is a film franchise whose story began with the 1977 movie Star Wars. Star Wars is created by screenwriter, producer and director George Lucas. At its core, Star Wars consists of three film trilogies: the original trilogy, which in addition to Star Wars includes the films The Empire Strikes Back (1980) and The Return of the Jedi (1983); the prequel trilogy, which takes place before the original trilogy, with the films The Dark Threat (1999), Attack of the Clones (2002) and Revenge of the Sith (2005); and finally the content of the sequel trilogy following the original trilogy, which began in 2015 with the film The Force Awakens and continued in 2017 with The Last Jedi. The ninth part started in cinemas on December 18, 2019 under the name The Rise of Skywalker.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="../img/about/3.jpg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div style="color:Yellow; class="timeline-heading">
+                  <h4>2015 - 2019</h4>
+                  <h4 class="subheading">Sequels</h4>
+                </div>
+                <div class="timeline-body">
+                  <p style="color:White;class="text-muted">The first installment, Star Wars: The Force Awakens, was released in December 2015. It was directed by J. J. Abrams who co-wrote the screenplay with Lawrence Kasdan and Michael Arndt. Harrison Ford, Mark Hamill, Carrie Fisher, and other cast members from the original trilogy returned to reprise their roles and co-star alongside Daisy Ridley, John Boyega, Adam Driver, and Oscar Isaac. The second installment, The Last Jedi, was released in December 2017, with Rian Johnson as screenwriter and director, and most of the cast returning. The three films have grossed a combined $4.3 billion worldwide. The third and final installment, The Rise of Skywalker, was directed by Abrams, who co-wrote it with Chris Terrio. It was released on December 20, 2019.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+			  <img class="rounded-circle img-fluid" src="../img/about/4.jpg" alt="">
+              </div>
+            </li>
+			
+			
+          </ul>
+		  <button id="mandalorianButton" type="button" alt="mandalorian als Button" onclick="window.open('../Timeline/_Timeline.html'); window.close();">
+			<img src="../Timeline/Star Wars TimeLine.jpg" width=230px height=360px>
+			</button>
+            <p style="color:White; class="text-muted">More accurate TimeLine</p>
+			<img src = "../Deko/nix.png" width = 950px height = 100px>
+			<img src ="../Deko/XWing.png" width = 150px height = 150px>
+        </div>
+      </div>
+    </div>
+	
+  </section>
+
+  <!-- Intros -->
+  <section class="page-section" id="intros"
+  style="background-image: url('../Deko/Galaxys.jpg');
+		background-repeat: repeat;>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 style="color:White" class="section-heading text-uppercase">Intros</h2>
+          <h3 class="section-subheading text-muted">Click on the button to see all Intros</h3>
+        </div>
+      </div>
+      
+              <div class="col-lg-12 text-center">
+                <div id="success"></div>
+                <button id="clonewarsButton" type="button" alt="clonewars als Button" onclick="window.open('../StarWarsAll/_StarwarsDescriptions.html'); window.close();">
+				<img src="../Deko/Star Wars.jpg" width=230px height=360px>
+				</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  
+  
+ <!-- Contact -->
+<section class="page-section" id="contact"
+  style="background-image: url('../Deko/black.png');
+		background-repeat: repeat;>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Contact</h2>
+          <h3 class="section-subheading text-muted">For help</h3>
+        </div>
+      </div>
+      
+              <div class="col-lg-12 text-center">
+                <div id="success"></div>
+				<h2 style="color:White">Sebastian Spisak</h2>
+                <button id="clonewarsButton" type="button" alt="clonewars als Button" onclick="window.open('https://www.google.com/search?q=sebastian.spisak03%40gmail.com&oq=sebastian.spisak03%40gmail.com&aqs=chrome..69i57j69i61j69i58.9926j0j7&sourceid=chrome&ie=UTF-8');">
+				<img src="../Deko/profile.png" width=230px height=230px>
+				</button>
+				<h2 style="color:White">E-Mail: sebastian.spisak03@gmail.com</h2>
+				<h2 style="color:White">Tel.: +43 0123 456 789</h2>
+				<br></br>
+				<br></br>
+				<br></br>
+				<h2 style="color:White">Berkan Kücüklü</h2>
+                <button id="clonewarsButton" type="button" alt="clonewars als Button" onclick="window.open('https://www.google.com/search?q=berkan.k1612%40gmail.com&oq=berkan.k1612%40gmail.com&aqs=chrome..69i57j69i58.726j0j7&sourceid=chrome&ie=UTF-8');">
+				<img src="../Deko/profile.png" width=230px height=230px>
+				</button>
+				<h2 style="color:White">E-Mail: berkan.k1612@gmail.com</h2>
+				<h2 style="color:White">Tel.: +43 9876 543 210</h2>
+				<br></br>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Contact form JavaScript -->
+  <script src="../js/jqBootstrapValidation.js"></script>
+  <script src="../js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="../js/agency.min.js"></script>
+
+</body>
+
+</html>

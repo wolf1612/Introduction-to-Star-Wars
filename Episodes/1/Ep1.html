@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  overflow: hidden;
+}
+
+.fade {
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+  top: -25px;
+  background-image: linear-gradient(0deg, transparent, black 75%);
+  z-index: 1;
+}
+
+.star-wars {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 800px;
+  color: #feda4a;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 500%;
+  font-weight: 600;
+  letter-spacing: 6px;
+  line-height: 150%;
+  perspective: 400px;
+  text-align: justify;
+}
+
+.crawl {
+  position: relative;
+  top: 9999px;
+  transform-origin: 50% 100%;
+  animation: crawl 60s linear;
+  animation-iteration-count: infinite;
+}
+
+.crawl > .title {
+  font-size: 90%;
+  text-align: center;
+}
+
+.crawl > .title h1 {
+  margin: 0 0 100px;
+  text-transform: uppercase;
+}
+
+@keyframes crawl {
+  0% {
+    top: 0;
+    transform: rotateX(20deg)  translateZ(0);
+  }
+  100% { 
+    top: -6000px;
+    transform: rotateX(25deg) translateZ(-2500px);
+  }
+}
+</style>
+</head>
+<body>
+<button id="Star Wars" type="button" alt="Star Wars als Button" onclick="window.open('../../StarWarsAll/_StarwarsDescriptions.html'); window.close();">
+		<img src="../../Deko/BackButton.png" width=100px height=100px>
+		</button>
+<embed name="GoodEnough" src="StarWarsTheme.mp3" loop="true" hidden="true" autostart="true">
+
+<!-- <audio id="DJ" loop="true"> -->
+  <!-- <source src="StarWarsTheme.ogg" type="audio/ogg"> -->
+  <!-- <source src="StarWarsTheme.mp3" type="audio/mpeg"> -->
+<!-- Your browser does not support the audio element. -->
+<!-- </audio> -->
+
+<div class="fade"></div>
+<section class="star-wars">
+
+  <div class="crawl">
+
+    <div class="title">
+      <p>Episode I</p>
+      <h1>DIE DUNKLE BEDROHUNG</h1>
+    </div>
+    
+    <p>Die Galaktische Republik wird von Unruhen erschüttert. Die Besteuerung der Handelsrouten zu weit entfernten Sternensystemen ist der Auslöser.</p>      
+    <p>In der Hoffnung, die Angelegenheit durch eine Blockade mit mächtigen Kampfschiffen zu beseitigen, hat die unersättliche Handelsföderation jeglichen Transport zu dem kleinen Planeten Naboo eingestellt.</p>
+    <p>Während der Kongreß der Republik endlose Debatten über diese beunruhigende Kette von Ereignissen führt, entsandte der Oberste Kanzler insgeheim zwei Jedi-Ritter, Wächter des Friedens und der Gerechtigkeit, um den Konflikt beizulegen....</p>
+
+  </div>
+</section>
+<script>
+<!--alert("Willst du deine Saga beginnen junger Padawan?");-->
+<!-- var sound = document.getElementById("DJ"); -->
+<!-- sound.currentTime = 0; -->
+<!-- sound.loop = true; //if you want it to restart playing automatically when it ends -->
+<!-- sound.play(); -->
+</script>
+</body>
+</html>
