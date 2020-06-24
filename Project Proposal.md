@@ -7,3 +7,6 @@
 
 ## Section 3
 #### HTML, CSS, Javascript, Bootstrap and json are used. We want make in the next weeks a map of the galaxis in Star Wars with all important planets and ship routes and battle places. We are also thinking about a simple space shooter game. At the end of the Project we're expecting a Website about the movies, series, the worldmap and about the weapons and ships.
+
+## Section 4
+#### The search bar with characters json server is there.
