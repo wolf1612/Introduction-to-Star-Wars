@@ -1,0 +1,29 @@
+<!DOCTYPE html><!-- PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//AT" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">-->
+<html><!-- xmlns="http://www.w3.org/1999/xhtml">-->
+	<head>
+		<meta charset = "utf-8">
+	</head>
+	<body
+	style="background-image: url('login_hintergrund.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%";>
+	<div id="id01">
+		<form>
+			<script src = "script.js"></script>
+			<label for="username">Username:</label><br><br>
+			<input type="text" id="username" name="username"><br><br>
+			<label for="email">Email:</label><br><br>
+			<input type="text" id="email" name="email"><br><br>
+			<label for="passsword">Password:</label><br><br>
+			<input type="text" id="password" name="passsword"><br><br>
+			<input type="submit" value="Sign Up" onclick="sendData()">
+			<input type="submit" value="Log In" onclick="logIn()">
+		</form>
+		<!-- Für die ID habe ich eine Lösung.
+		wir machen eine GET Request um eine Id zu erhalten
+		und der neue user ist diese id + 1-->
+	</div>
+	</body>
+</html>

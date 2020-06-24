@@ -1,0 +1,53 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "email": "",
+      "username": ""
+    },
+    {
+      "email": "kuecueklue.b1612@gmail.com",
+      "name": "1234",
+      "id": 1
+    },
+    {
+      "email": "kuecueklue.b1612@gmail.com",
+      "name": "1234",
+      "id": 2
+    },
+    {
+      "username": "Wolf1",
+      "password": "1234",
+      "id": 3
+    },
+    {
+      "username": "RottenMushroom",
+      "password": "1234",
+      "id": 4
+    },
+    {
+      "username": "RottenMushroom",
+      "email": "kuecueklue.b1612@gmail.com",
+      "password": "1234",
+      "id": 5
+    },
+    {
+      "username": "RottenMushroom",
+      "email": "kuecueklue.b1612@gmail.com",
+      "password": "1234",
+      "id": 6
+    },
+    {
+      "username": "RottenMushroom",
+      "email": "",
+      "password": "1234",
+      "id": 7
+    },
+    {
+      "username": "bobw",
+      "email": "berkan.k1612@gmail.com",
+      "password": "4321",
+      "id": 8
+    }
+  ]
+}
